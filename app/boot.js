@@ -1,3 +1,7 @@
+/**
+ * Created by Merlin on 2016-01-08.
+ */
+/// <reference path="../tsReferences/_references.ts" />
 System.register(['angular2/platform/browser', './app.component.js'], function(exports_1) {
     var browser_1, app_component_js_1;
     return {

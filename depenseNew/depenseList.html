@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Liste des dépenses</title>
+
+    <!-- 1. Load libraries -->
+    <script src="../code/node_modules/es6-shim/es6-shim.js"></script>
+    <script src="../code/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="../code/node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../code/node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="../code/node_modules/angular2/bundles/angular2.dev.js"></script>
+
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('../code/depenseNew/boot.js')
+                .then(null, console.error.bind(console));
+    </script>
+
+</head>
+
+<!-- 3. Display the application  -->
+<body>
+<depense-list-app>Loading...</depense-list-app>
+</body>
+
+</html>
