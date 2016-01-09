@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div style="font-size: large; font-weight: bold">Revenue</div>
+<br>
+<table border="1" style="width:300px">
+    <tr style="font-weight: bold">
+        <td>Logement</td>
+        <td>Revenue</td>
+    </tr>
+    <tr>
+        <td>1821 Bennett (1e)</td>
+        <td id="Revenue1821"></td>
+    </tr>
+    <tr>
+        <td>1825 Bennett (2e)</td>
+        <td id="Revenue1825"></td>
+    </tr>
+    <tr>
+        <td>1823 Bennett (3e)</td>
+        <td id="Revenue1823"></td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td id="RevenueTotal"></td>
+    </tr>
+    <tr>
+        <td>Total sans 1821</td>
+        <td id="RevenueSans1821Total"></td>
+    </tr>
+</table>
+<br>
+<div style="font-size: large; font-weight: bold">Dépense</div>
+<div id="depenseValidation"></div>
+<br>
+<table border="1" style="width:600px">
+    <tr style="font-weight: bold">
+        <td></td>
+        <td>Dépenses totales</td>
+        <td>Partie personelle</td>
+    </tr>
+    <tr style="width:300px">
+        <td>Publicité</td>
+        <td id="publicity"></td>
+        <td id="publicityPerso"></td>
+    </tr>
+    <tr>
+        <td>Assurances</td>
+        <td id="assurance"></td>
+        <td id="assurancePerso"></td>
+    </tr>
+    <tr>
+        <td>Intérêts de l'hypothèque</td>
+        <td id="interetHypotheque"></td>
+        <td id="interetHypothequePerso"></td>
+    </tr>
+    <tr>
+        <td>Intérêts marge de crédit</td>
+        <td id="interetMarge"></td>
+        <td id="interetMargePerso"></td>
+    </tr>
+    <tr>
+        <td>Frais de bureau</td>
+        <td id="officeFees"></td>
+        <td id="officeFeesPerso"></td>
+    </tr>
+    <tr>
+        <td>Frais comptables, juridiques et autdes honoraires professionnels</td>
+        <td id="fraisJuridique"></td>
+        <td id="fraisJuridiquePerso"></td>
+    </tr>
+    <tr>
+        <td>Frais de gestion et d'administration</td>
+        <td id="management"></td>
+        <td id="managementPerso"></td>
+    </tr>
+    <tr>
+        <td>Entretien et réparation</td>
+        <td id="entretienEtReparation"></td>
+        <td id="entretienEtReparationPerso"></td>
+    </tr>
+    <tr>
+        <td>Salaires, traitements et avantages (y compris les cotisations de l'employeur)</td>
+        <td id="salary"></td>
+        <td id="salaryPerso"></td>
+    </tr>
+    <tr>
+        <td>Impôts fonciers et taxe scolaire</td>
+        <td id="impotFoncier"></td>
+        <td id="impotFoncierPerso"></td>
+    </tr>
+    <tr>
+        <td>Frais de voyage</td>
+        <td id="travelling"></td>
+        <td id="travellingPerso"></td>
+    </tr>
+    <tr>
+        <td>Services publics</td>
+        <td id="publicServices"></td>
+        <td id="publicServicesPerso"></td>
+    </tr>
+    <tr>
+        <td>Dépenses relatives aux véhicules à moteur (sans la DPA)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Autres dépenses</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td id="total"></td>
+        <td id="totalPerso"></td>
+    </tr>
+</table>
+<br>
+
+<div style="font-size: large; font-weight: bold">Calcul final</div>
+<br>
+<table border="1" style="width:300px">
+
+    <tr>
+        <td>Dépense déductible (Dépenses total - Dépenses partie personnelle)</td>
+        <td id="depenseDeductible"></td>
+    </tr>
+    <tr>
+        <td>Revenue Nette (Revenue Total sans 1821 - Dépenses débuctible</td>
+        <td id="revenueNette"></td>
+    </tr>
+    <tr>
+        <td>Revenue Nette par Personne (Revenue nette / 2)</td>
+        <td id="revenueNetteParPersonne"></td>
+    </tr>
+</table>
+<br>
+<br>
+<div id="impot"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://mm3mm3.sharepoint.com/sites/immoDMMM/1821Bennett/Code/u/papaparse.min.js"></script>
+<script src="https://mm3mm3.sharepoint.com/sites/immoDMMM/1821Bennett/Code/u/underscore-min.js"></script>
+<script src="https://mm3mm3.sharepoint.com/sites/immoDMMM/1821Bennett/Code/c/impot.min.js"></script>
+
+
+</body>
+</html>
