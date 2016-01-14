@@ -3,8 +3,8 @@
  */
 /// <reference path="../tsReferences/_references.ts" />
 
-import {Component, Injectable} from 'angular2/core';
-import {Http, HTTP_PROVIDERS} from 'angular2/http';
+import {Component, Injectable} from '../angular2/core';
+import {Http, HTTP_PROVIDERS} from '../angular2/http';
 
 @Component({
     providers: [HTTP_PROVIDERS]
