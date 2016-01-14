@@ -3,6 +3,7 @@
  */
 import {bootstrap}    from 'angular2/platform/browser'
 import {DepenseListComponent} from './depense-list.component.js'
-import {HTTP_PROVIDERS} from 'angular2/http';
+import {HTTP_PROVIDERS} from '../node_modules/angular2/http.js';
+import {DepenseService} from "./depense.service.js";
 
-bootstrap(DepenseListComponent, [... HTTP_PROVIDERS]);
+bootstrap(DepenseListComponent, [... HTTP_PROVIDERS], [DepenseService]);

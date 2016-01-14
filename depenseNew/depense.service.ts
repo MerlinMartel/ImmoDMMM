@@ -16,11 +16,11 @@ export class DepenseService {
     constructor(http: Http) {
         var restUrl = "https://mm3mm3.sharepoint.com/sites/immoDMMM/1821Bennett/_api/web/lists/getbytitle('Depenses')/items";
         this.http.get(restUrl)
-            .map(res => res.text())
+            .map(res => res)
             .subscribe(
-                data => this.randomQuote = data,
+                data => this.d.results = data,
                 err => this.logError(err),
-                () => console.log('Random Quote Complete')
+                () => console.log('yo... je fais des tests')
             );
     }
 

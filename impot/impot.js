@@ -4,7 +4,7 @@ var depensesDocLib;
 //todo ne utiliser variable globale
 var DepenseCurrentYear;
 //todo trouver une manière de faire plus clean
-var year = "2014.00000000000";
+var year = "2015.00000000000";
 var impotFoncier = 0;
 var fraisJuridique = 0;
 var officeFees = 0;
