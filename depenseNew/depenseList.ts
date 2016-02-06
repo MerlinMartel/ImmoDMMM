@@ -34,31 +34,29 @@ app.controller('myCtrl',
         loadDocs();
 
 
-            var rowtpl = '<div ng-class="{\'validated\':row.entity.Valide===true}" <div ng-repeat="col in colContainer.renderedColumns track by col.colDef.name"  class="ui-grid-cell" ui-grid-cell></div></div>';
-
         $scope.gripDepense = {
             enableFiltering: true,
             showGridFooter: true,
             showColumnFooter: true,
-            rowTemplate:rowtpl,
             onRegisterApi: function(gridApi){
                 $scope.gridApi = gridApi;
             },
             columnDefs: [
-                { field: 'ID', displayName: "ID", filterCellFiltered:false, width: '5%' },
+                { field: 'Valide', displayName: "Validé", filterCellFiltered:true,
+                    cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
+                        if (grid.getCellValue(row,col) == true) {
+                            return 'validated';
+                        }
+                    }
+                },
                 { field: 'Prix', displayName: "Prix", filterCellFiltered:true, width: '6%', aggregationType: uiGridConstants.aggregationTypes.sum},
                 { field: 'FileLeafRef', displayName: "Nom du fichier", filterCellFiltered:true },
                 { field: 'Title', displayName: "Titre", filterCellFiltered:true },
                 { field: 'GestionnairesChoice', displayName: "Gestionnaire", filterCellFiltered:true },
                 { field: 'Year', displayName: "Année", filterCellFiltered:true, width: '5%'},
                 { field: 'abb42f33a9624f5ca80efef7362d4ef5', displayName: "Cat Impot", filterCellFiltered:true},
-                { field: 'mb224476f17843fca98a3d3839819897', displayName: "Logement", filterCellFiltered:true,
-                    cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
-                    if (grid.getCellValue(row,col) == 1) {
-                        return 'blue';
-                    }
-                    return 'green';
-                }}
+                { field: 'mb224476f17843fca98a3d3839819897', displayName: "Logement", filterCellFiltered:true}
+
             ]
         }
 
