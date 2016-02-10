@@ -80,12 +80,12 @@ function displayDepense(depenseCurrentYear){
         depenseItem.append(dFileName);
         var dPrix = $("<div>", {
             class: "dPrix",
-            text: item.Prix
+            text: item.Prix ? item.Prix : "N/A"
         });
         depenseItem.append(dPrix);
         var dGestionnaires = $("<div>", {
             class: "dGestionnaires",
-            text: item.GestionnairesChoice
+            text: item.GestionnairesChoice ? item.GestionnairesChoice : "N/A"
         });
         depenseItem.append(dGestionnaires);
         var catImpot = item.abb42f33a9624f5ca80efef7362d4ef5;
@@ -123,7 +123,7 @@ function displayDepense(depenseCurrentYear){
         depenseItem.append(dDate);
         var dValide = $("<div>", {
             class: "dValide",
-            text: item.Valide
+            text: item.Valide ? "Validé" : "À valider"
         });
         depenseItem.append(dValide);
     })

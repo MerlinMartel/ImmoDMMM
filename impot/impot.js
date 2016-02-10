@@ -212,13 +212,6 @@ function calculateRevenuAnneeCourante(){
     return {r1821:revenueAnneeCourante1821Total,r1821Count:revenueAnneeCourante1821Array.length,r1825:revenueAnneeCourante1825Total,r1825Count:revenueAnneeCourante1825Array.length,r1823:revenueAnneeCourante1823Total,r1823Count:revenueAnneeCourante1823Array.length}
 }
 function calculateEntretientEtReparation(DepenseCurrentYearClean, DepenseCurrentYearLogementClean){
-   //Pour avoir info d'un item
-    var debug = depensesDocLib.filter(function(item){
-        return (item.ID == "313")
-    });
-    console.log("debug");
-    console.log(debug);
-
 
     nbDepense = DepenseCurrentYearClean.length;
 
@@ -245,7 +238,7 @@ function calculateEntretientEtReparation(DepenseCurrentYearClean, DepenseCurrent
     entretienEtReparation1823 = GetSumCatImpotLogement(DepenseCurrentYearLogementClean, '4f3aeab1-3e03-47f4-9990-dd37ae87f392', 'e7b37114-f23f-4147-ba74-838fb1465b93');
     entretienEtReparation1825 = GetSumCatImpotLogement(DepenseCurrentYearLogementClean, '4f3aeab1-3e03-47f4-9990-dd37ae87f392', 'af6d2616-e905-470c-ab44-ef035e17daed');
     entretienEtReparationGlobal = GetSumCatImpotLogement(DepenseCurrentYearLogementClean, '4f3aeab1-3e03-47f4-9990-dd37ae87f392', 'f2fe96e7-9b59-4dfc-99c7-712e483f1072');
-    interetMargeDeCredit = 1010.36;
+    interetMargeDeCredit = 955.99;
     interetHypotheque = 12050.2;
     
     totalDepense = interetHypotheque + impotFoncier.total + fraisJuridique.total + officeFees.total + assurance.total + publicity.total + managementAdmin.total + salary.total + travelling.total + publicServices.total  + interetMargeDeCredit +entretienEtReparation.total;
