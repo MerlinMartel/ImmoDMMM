@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="d7392e11-2f3d-4f5d-a64f-0a9ca5525af5" name="code" url="http://localhost">
-        <fileTransfer mountedRoot="X:\" accessType="MOUNT" />
+        <fileTransfer mountedRoot="Z:\" accessType="MOUNT" />
       </webServer>
     </option>
   </component>
