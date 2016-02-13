@@ -5,13 +5,14 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
+    "start": "webpack-dev-server --inline --hot --watch --content-base depenseListAngularWebpack/build/"
   },
   "dependencies": {
-
+    "angular": "^1.5.0"
   },
   "devDependencies": {
     "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
     "style-loader": "^0.13.0",
     "ts-loader": "^0.8.0",
     "typescript": "^1.7.5",

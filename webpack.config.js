@@ -5,7 +5,7 @@ module.exports = {
         path:  __dirname + '/depenseListAngularWebpack/build/',
         filename: 'bundle.js'
     },
-    devtool:"source-map",
+    devtool:"eval-source-map",
     module:{
         loaders:[
             {test : /\.ts$/, loader: 'ts'}
