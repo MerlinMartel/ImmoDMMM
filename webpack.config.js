@@ -8,7 +8,8 @@ module.exports = {
     devtool:"eval-source-map",
     module:{
         loaders:[
-            {test : /\.ts$/, loader: 'ts'}
+            {test : /\.ts$/, loader: 'ts'},
+            {test : /\.html$/, loader: '' + 'file?name=[name].[ext]'}
         ]
     },
     resolve: {

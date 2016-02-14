@@ -1,4 +1,4 @@
-// Compiled using typings@0.6.7
+// Compiled using typings@0.6.8
 // Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/b090bcf9ba9f756ec8ff53e7707269729172a325/moment/moment.d.ts
 // Type definitions for Moment.js 2.8.0
 // Project: https://github.com/timrwood/moment

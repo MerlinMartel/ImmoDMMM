@@ -2,8 +2,14 @@
  * Created by Merlin on 2016-02-09.
  */
 
-import angular = require('angular');
-var app = angular.module('myApp', []);
+require('../node_modules/angular/angular.min');
+//var app = angular.module('myApp', []);
+declare var require: {
+    <T>(path: string): T;
+    (paths: string[], callback: (...modules: any[]) => void): void;
+    ensure: (paths: string[], callback: (require: <T>(path: string) => T) => void) => void;
+};
 
+require('./index.html');
 
-console.log(app);
+console.log('tata');

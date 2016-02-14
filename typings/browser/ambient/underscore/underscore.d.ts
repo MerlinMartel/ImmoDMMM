@@ -1,4 +1,4 @@
-// Compiled using typings@0.6.7
+// Compiled using typings@0.6.8
 // Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/669e1b73f18ea6ea15bfbfbbdad6501bfa0ff340/underscore/underscore.d.ts
 // Type definitions for Underscore 1.7.0
 // Project: http://underscorejs.org/

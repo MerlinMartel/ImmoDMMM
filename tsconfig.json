@@ -4,16 +4,7 @@
     "module": "commonjs",
     "sourceMap": true
   },
-  "exclude": [
-    "node_modules",
-    "tsReferences",
-    "typings",
-    "app",
-    "depense",
-    "depenseListAngular2",
-    "depenseNew",
-    "depensesEditForm",
-    "impot",
-    "utils"
+  "files": [
+    "test.ts"
   ]
 }
