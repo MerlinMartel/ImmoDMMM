@@ -3,6 +3,7 @@
  */
 /// <reference path="../tsReferences/_references.ts" />
 System.register(['angular2/platform/browser', './app.component.js'], function(exports_1) {
+    "use strict";
     var browser_1, app_component_js_1;
     return {
         setters:[

@@ -1,4 +1,5 @@
 System.register(['angular2/core', './hero-detail.component.js', './hero.service.js'], function(exports_1) {
+    "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -49,7 +50,7 @@ System.register(['angular2/core', './hero-detail.component.js', './hero.service.
                 ], AppComponent);
                 return AppComponent;
                 var _a;
-            })();
+            }());
             exports_1("AppComponent", AppComponent);
         }
     }

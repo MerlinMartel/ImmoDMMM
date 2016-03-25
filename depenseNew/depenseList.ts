@@ -56,7 +56,6 @@ app.controller('myCtrl',
                 { field: 'Year', displayName: "Année", filterCellFiltered:true, width: '5%'},
                 { field: 'abb42f33a9624f5ca80efef7362d4ef5', displayName: "Cat Impot", filterCellFiltered:true},
                 { field: 'mb224476f17843fca98a3d3839819897', displayName: "Logement", filterCellFiltered:true}
-
             ]
         }
 
